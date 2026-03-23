@@ -1,15 +1,22 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win64-MinGW",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/third_party",
+                "${workspaceFolder}/third_party/websocketpp",
+                "${workspaceFolder}/third_party/asio_1_18/asio/include",
+                "D:/cppsoft/mingw64/include",
+                "D:/cppsoft/mingw64/opt/include"
             ],
-            "defines": [],
-            "compilerPath": "/usr/bin/g++",
+            "defines": [
+                "ASIO_STANDALONE"
+            ],
+            "compilerPath": "D:/cppsoft/mingw64/bin/g++.exe",
             "cStandard": "c17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
