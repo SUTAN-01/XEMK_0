@@ -75,20 +75,7 @@ build/main1.exe
 
 ## 2) 启动客户端
 
-二选一：
-
-1. 打开 `game_interface1_8.html`（浏览器）
-2. 运行 PyQt 客户端：
-
-```bash
-python game_interface.py
-```
-
-或：
-
-```bash
-python game_interface_desk.py
-```
+web客户端game_interface1_8.html直接使用python -m http.server 8000将html文件目录共享给局域网设备
 
 ## 3) 对战测试
 
